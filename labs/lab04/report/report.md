@@ -99,7 +99,7 @@ header-includes:
 
 **4.2 ВЫполнение лабораторной работы.**
 4.2.1 Для начала открою терминал и перейду в каталог курса,который был создан при выполнении лабораторной работы номер 3. После этого я обновлю локальный репозиторий, скачав изменения из удалённого репозитория с помощью команды.
-![Обновление локального репозитория](https://github.com/Florikan2/study_2022-2023_arh-pc/blob/master/labs/lab04/presentation/image/%D0%9E%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5.png?raw=true) { #fig:001 width=70% }
+![Обновление локального репозитория](https://4.downloader.disk.yandex.ru/preview/d62f1e3dcc3b3c747acbdf70679a41fe5b121349aafc29964922ba9225dfc11c/inf/LBHCzFu_PVHSRELYi4xw_D_hYdI1ZJ475vmINnIKwE36g8g-SE5wedKV-Te_vi2bAnqm_LKfeR5Y-BVAj1lJ-Q%3D%3D?uid=749467057&filename=%D0%9E%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=749467057&tknv=v2&size=1920x912) { #fig:001 width=70% }
 
 4.2.2  Дальше я перейду в каталлог с шаблоном отчёта по лабораторной номер 4.
 ![Каталог с шаблоном отчёта лабораторной работы номер 4](i/home/iayakovin/Изображения/Снимки экрана/kat.jpg){ #fig:001 width=70% }
