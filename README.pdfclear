@@ -1,0 +1,63 @@
+<h1 id="шаблон-каталога-курса-для-студентов">Шаблон каталога курса для студентов</h1>
+<h2 id="скачать-репозиторий">Скачать репозиторий</h2>
+<p>git clone –recursive https://github.com/yamadharma/course-directory-student-template.git</p>
+<h1 id="основные-идеи">Основные идеи</h1>
+<ul>
+<li>Стандартные соглашения об именах</li>
+<li>Стандартное соглашение для путей к файлам</li>
+<li>Стандартная настройка курса внутри шаблона курса</li>
+</ul>
+<h1 id="общие-правила">Общие правила</h1>
+<ul>
+<li><p>Рабочее пространство по предмету располагается в следующей иерархии:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">~/work/study/</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">└──</span> <span class="op">&lt;</span>учебный год<span class="op">&gt;</span>/</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="ex">└──</span> <span class="op">&lt;</span>название предмета<span class="op">&gt;</span>/</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>        <span class="ex">└──</span> <span class="op">&lt;</span>код предмета<span class="op">&gt;</span>/</span></code></pre></div></li>
+<li><p>Например, для 2022–2023 учебного года и предмета «Операционные системы» (код предмета <code>os-intro</code>) структура каталогов примет следующий вид:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">~/work/study/</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">└──</span> 2022-2023/</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="ex">└──</span> Операционные системы/</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>        <span class="ex">└──</span> os-intro/</span></code></pre></div></li>
+<li><p>Название проекта на хостинге git имеет вид:</p>
+<pre class="example"><code>study_&lt;учебный год&gt;_&lt;код предмета&gt;</code></pre></li>
+<li><p>Например, для 2022–2023 учебного года и предмета «Операционные системы» (код предмета <code>os-intro</code>) название проекта примет следующий вид:</p>
+<pre class="example"><code>study_2022-2023_os-intro</code></pre></li>
+<li><p>Каталог для лабораторных работ имеет вид <code>labs</code>.</p></li>
+<li><p>Каталоги для лабораторных работ имеют вид <code>lab&lt;номер&gt;</code>, например: <code>lab01</code>, <code>lab02</code> и т.д.</p></li>
+<li><p>Каталог для групповых проектов имеет вид <code>group-project</code>.</p></li>
+<li><p>Каталог для персональных проектов имеет вид <code>personal-project</code>.</p></li>
+<li><p>Если проектов несколько, то они нумеруются подобно лабораторным работам.</p></li>
+<li><p>Этапы проекта обозначаются как <code>stage&lt;номер&gt;</code>.</p></li>
+</ul>
+<h1 id="шаблон-для-рабочего-пространства">Шаблон для рабочего пространства</h1>
+<ul>
+<li>Репозиторий: <a href="https://github.com/yamadharma/course-directory-student-template" class="uri">https://github.com/yamadharma/course-directory-student-template</a>.</li>
+</ul>
+<h2 id="сознание-репозитория-курса-на-основе-шаблона">Сознание репозитория курса на основе шаблона</h2>
+<ul>
+<li><p>Репозиторий на основе шаблона можно создать либо вручную, через web-интерфейс, либо с помощью утилит <code>gh</code> (см. <a href="id:d1925a41-6b4c-4a3a-b102-6337891b8841">github: утилиты командной строки</a>).</p></li>
+<li><p>Создание с помощью утилит.</p></li>
+<li><p>Создание выглядит следующим образом:</p>
+<pre class="shell"><code>gh repo create &lt;new-repo-name&gt; --template=&quot;&lt;owner/template-repo&gt;&quot;</code></pre></li>
+<li><p>Например, для 2022–2023 учебного года и предмета «Операционные системы» (код предмета <code>os-intro</code>) создание репозитория примет следующий вид:</p>
+<pre class="shell"><code>mkdir -p ~/work/study/2022-2023/&quot;Операционные системы&quot;
+cd ~/work/study/2022-2023/&quot;Операционные системы&quot;
+gh repo create study_2022-2023_os-intro --template=yamadharma/course-directory-student-template --public
+git clone --recursive git@github.com:&lt;owner&gt;/study_2022-2023_os-intro.git os-intro</code></pre></li>
+<li><p>Сделать свой репозиторий на основе шаблона можно и вручную.</p></li>
+</ul>
+<h2 id="настройка-каталога-курса">Настройка каталога курса</h2>
+<ul>
+<li><p>Перейдите в каталог курса:</p>
+<pre class="shell"><code>cd ~/work/study/2022-2023/&quot;Операционные системы&quot;/os-intro</code></pre></li>
+<li><p>Удалите лишние файлы:</p>
+<pre class="shell"><code>rm package.json</code></pre></li>
+<li><p>Создайте необходимые каталоги:</p>
+<pre class="shell"><code>echo os-intro &gt; COURSE
+make</code></pre></li>
+<li><p>Отправьте файлы на сервер:</p>
+<pre class="shell"><code>git add .
+git commit -am &#39;feat(main): make course structure&#39;
+git push</code></pre></li>
+</ul>
