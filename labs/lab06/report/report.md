@@ -109,7 +109,7 @@ header-includes:
 
 1. Открою Midnight Commander
 
-![Открытие Midnight Commander](ihttps://github.com/Florikan2/study_2022-2023_arh-pc/blob/master/labs/lab06/report/image/1.%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B5%20mc.png)
+![Открытие Midnight Commander](https://github.com/Florikan2/study_2022-2023_arh-pc/blob/master/labs/lab06/report/image/1.%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B5%20mc.png)
 
 
 2. Перейду в каталог ~/work/arch-pc
