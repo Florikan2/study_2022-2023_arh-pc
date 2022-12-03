@@ -113,6 +113,7 @@ header-includes:
 
 
 ![ Рис. 1 Создание файла lab8-1.asm](https://github.com/Florikan2/study_2022-2023_arh-pc/blob/master/labs/lab08/report/image/1.%20%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B3%D0%B0.png) 
+Рис. 1 Создание файла lab8-1.asm
 
 
 2. Введу в файл lab8-1.asm текст программы из листинга 8.1
